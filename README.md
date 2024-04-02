@@ -1,8 +1,8 @@
 # LithicRivers
 
-An ASCII game in development
+An ASCII game I want to finish.
 
-![actual screenshot](media/screenshot.png)
+![Screenshot of the game](media/screenshot.png)
 
 ## Play the game
 
@@ -62,13 +62,3 @@ read the help page
 - https://github.com/meysam81/notable-newts
 - https://github.com/JnyJny/GameOfLife
 - https://github.com/VedantKhairnar/The-Maze-Runner
-
-## meme
-
-take a look at some of our reviews below...
-
-![why do we exist...just to suffer...?](media/dafuq.png)
-
-![gnerf](http://images3.memedroid.com/images/UPLOADED727/5c1d01829c2ff.jpeg)
-
-god help me
