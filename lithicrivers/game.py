@@ -151,7 +151,7 @@ class Inventory:
         for k, v in self.count_items().items():
             s += '{}={}, '.format(k, v)
 
-        return s[0:len(s) - 2]  # wow you lazy bastard, you cant even fucking format a string???? AAFSDFASDFADFAFSD
+        return s[0:len(s) - 2]
 
 
 class Player(Entity, SpriteRenderable):
@@ -217,7 +217,7 @@ def generate_tile(choices: List[Tile] = None, weights: List[int] = None, current
     if choices is None:
         choices = [Tiles.Tree(),
                    Tiles.Dirt(),
-                   Tiles.DaFuq()]
+                   Tiles.OreCluster()]
 
     if weights is None:
         weights = [5, 100, 1]
@@ -232,7 +232,7 @@ def generate_tile(choices: List[Tile] = None, weights: List[int] = None, current
             # we are underground
             return weighted_choice(
                 [1, 0.2, 0.05],
-                [Tiles.Bedrock(), Tiles.Dirt(), Tiles.DaFuq()]
+                [Tiles.Bedrock(), Tiles.Dirt(), Tiles.OreCluster()]
             )
 
     return weighted_choice(weights, choices)
@@ -263,8 +263,8 @@ class Tiles:
                     drops={1.00: Items.Stick()})
 
     @staticmethod
-    def DaFuq():
-        return Tile("Dafuq is this?", drops={
+    def OreCluster():
+        return Tile("A cluster of ores", drops={
             0.9: Items.Gold_Nugget(),
             0.1: Items.Diamond()
         })

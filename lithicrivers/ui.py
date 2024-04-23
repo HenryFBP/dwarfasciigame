@@ -334,7 +334,7 @@ class InputHandler:
         elif tile_under == Tiles.Tree():
             root_page.labelMessage.text = 'Yell at me to let you mine trees. I\'m lazy.'
             return  # can't mine dirt
-        elif tile_under == Tiles.DaFuq():
+        elif tile_under == Tiles.OreCluster():
             game.player.inventory.add_item(tile_under.calc_drop())
             game.set_tile_at_player_feet(Tiles.Dirt())
 

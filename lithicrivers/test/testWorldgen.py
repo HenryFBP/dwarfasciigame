@@ -20,7 +20,7 @@ class GenStuff(unittest.TestCase):
             self.assertEqual(worldData.get_tile(VectorN(0, 0, 1)), Tiles.Cloud())
             self.assertIn(
                 worldData.get_tile(VectorN(0, 0, -1)),
-                [Tiles.Bedrock(), Tiles.Dirt(), Tiles.DaFuq()]
+                [Tiles.Bedrock(), Tiles.Dirt(), Tiles.OreCluster()]
             )
 
     def testWorldGenRandomSpread(self):
